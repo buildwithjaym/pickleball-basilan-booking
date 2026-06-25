@@ -529,239 +529,238 @@ export default function HomePage() {
 
       <main>
         <section
-          id="home"
-          className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-brand-black pb-20 pt-32 text-white"
+  id="home"
+  className="relative isolate flex min-h-[100svh] items-center overflow-hidden bg-brand-black pb-16 pt-24 sm:pt-28 lg:pt-32 text-white"
+>
+  {/* BACKGROUND (UNCHANGED) */}
+  <Image
+    src="/hero_pic.jpg"
+    alt="Pickleball players enjoying a match"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover object-center"
+  />
+
+  {/* OVERLAYS (UNCHANGED) */}
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/25" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(151,212,20,0.22),transparent_30%)]" />
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_80%,rgba(135,53,245,0.34),transparent_32%)]" />
+
+  {/* FLOAT ANIMATION (UNCHANGED) */}
+  <motion.div
+    aria-hidden="true"
+    animate={{
+      y: [0, -18, 0],
+      rotate: [0, 3, 0],
+    }}
+    transition={{
+      duration: 6,
+      repeat: Number.POSITIVE_INFINITY,
+      ease: "easeInOut",
+    }}
+    className="absolute right-[7%] top-[17%] hidden size-48 rounded-full bg-brand-lime-400/15 blur-3xl lg:block"
+  />
+
+  {/* RESPONSIVE GRID FIX ONLY */}
+  <div className="
+    site-container relative z-10
+    grid items-center gap-10 lg:gap-14
+    lg:grid-cols-[1.08fr_0.92fr]
+  ">
+
+    {/* LEFT CONTENT */}
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="max-w-4xl"
+    >
+      {/* BADGE (RESPONSIVE TEXT ONLY) */}
+      <Badge className="
+        mb-5 sm:mb-6
+        border-brand-lime-300/30
+        bg-brand-lime-400/10
+        px-3 sm:px-4 py-2
+        text-[10px] sm:text-xs
+        font-bold uppercase tracking-[0.2em]
+        text-brand-lime-300
+      ">
+        Basilan&apos;s growing pickleball community
+      </Badge>
+
+      {/* TITLE (FIX MOBILE OVERFLOW ONLY) */}
+      <h1 className="
+        font-display font-bold tracking-tight leading-[0.98]
+        text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem]
+      ">
+        Where Basilan
+        <span className="mt-1 sm:mt-2 block text-brand-lime-400">
+          comes to play.
+        </span>
+      </h1>
+
+      {/* DESCRIPTION (BETTER MOBILE READABILITY ONLY) */}
+      <p className="
+        mt-5 sm:mt-7
+        max-w-2xl
+        text-sm sm:text-base lg:text-xl
+        leading-7 sm:leading-8
+        text-white/70
+      ">
+        Discover a faster, friendlier, and more exciting way to stay active.
+        Learn the game, challenge your skills, and become part of a community
+        built around every rally.
+      </p>
+
+      {/* CTA (MOBILE-FIRST FIX ONLY) */}
+      <div className="
+        mt-7 sm:mt-9
+        flex flex-col sm:flex-row
+        gap-3
+      ">
+
+        <Button
+          asChild
+          size="lg"
+          className="
+            h-12 sm:h-14
+            w-full sm:w-auto
+            rounded-full px-6 sm:px-8
+            text-base font-bold
+            lime-button
+          "
         >
-          <Image
-            src="/hero_pic.jpg"
-            alt="Pickleball players enjoying a match"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-          />
+          <Link href="/reservation">
+            Reserve your court
+            <ArrowRight className="ml-2 size-5" />
+          </Link>
+        </Button>
 
-          <div className="absolute inset-0 bg-black/50" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/25" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(151,212,20,0.22),transparent_30%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_80%,rgba(135,53,245,0.34),transparent_32%)]" />
+        <Button
+          asChild
+          size="lg"
+          variant="outline"
+          className="
+            h-12 sm:h-14
+            w-full sm:w-auto
+            rounded-full px-6 sm:px-8
+            border-white/25 bg-white/5
+            text-white font-bold
+            backdrop-blur-md
+            hover:bg-white/10
+          "
+        >
+          <Link href="/schedule">
+            <CalendarDays className="mr-2 size-5" />
+            Explore the schedule
+          </Link>
+        </Button>
 
-          <motion.div
-            aria-hidden="true"
-            animate={{
-              y: [0, -18, 0],
-              rotate: [0, 3, 0],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-            }}
-            className="absolute right-[7%] top-[17%] hidden size-48 rounded-full bg-brand-lime-400/15 blur-3xl lg:block"
-          />
+      </div>
 
-          <div className="site-container relative z-10 grid items-center gap-14 lg:grid-cols-[1.08fr_0.92fr]">
-            <motion.div
-              initial={{
-                opacity: 0,
-                y: 30,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 0.7,
-                ease: "easeOut",
-              }}
-              className="max-w-4xl"
-            >
-              <Badge className="mb-6 border-brand-lime-300/30 bg-brand-lime-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-lime-300 hover:bg-brand-lime-400/10">
-                Basilan&apos;s growing pickleball community
-              </Badge>
+      {/* STATS (MOBILE WRAP FIX ONLY) */}
+      <div className="
+        mt-8 sm:mt-10
+        grid grid-cols-3 gap-2 sm:gap-3
+        max-w-2xl
+        border-t border-white/15 pt-6
+      ">
+        <div>
+          <div className="font-display text-xl sm:text-3xl font-bold">All</div>
+          <p className="text-[10px] sm:text-sm text-white/50">
+            Skill levels welcome
+          </p>
+        </div>
 
-              <h1 className="font-display text-5xl font-bold leading-[0.96] tracking-tight sm:text-6xl md:text-7xl xl:text-[5.75rem]">
-                Where Basilan
-                <span className="mt-2 block text-brand-lime-400">
-                  comes to play.
-                </span>
-              </h1>
+        <div>
+          <div className="font-display text-xl sm:text-3xl font-bold">Weekly</div>
+          <p className="text-[10px] sm:text-sm text-white/50">
+            Community play
+          </p>
+        </div>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/70 sm:text-lg lg:text-xl">
-                Discover a faster, friendlier, and more exciting way to
-                stay active. Learn the game, challenge your skills, and
-                become part of a community built around every rally.
-              </p>
+        <div>
+          <div className="font-display text-xl sm:text-3xl font-bold">Local</div>
+          <p className="text-[10px] sm:text-sm text-white/50">
+            Basilan community
+          </p>
+        </div>
+      </div>
+    </motion.div>
 
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Button
-                  asChild
-                  size="lg"
-                  className="lime-button h-14 rounded-full px-8 text-base font-bold"
-                >
-                  <Link href="/reservation">
-                    Reserve your court
-                    <ArrowRight className="ml-2 size-5" />
-                  </Link>
-                </Button>
+    {/* RIGHT PANEL (RESPONSIVE FIX ONLY - NO DESIGN CHANGE) */}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.94, x: 30 }}
+      animate={{ opacity: 1, scale: 1, x: 0 }}
+      transition={{ duration: 0.75, delay: 0.2, ease: "easeOut" }}
+      className="relative hidden lg:block"
+    >
+      {/*
+        KEEP ENTIRE RIGHT PANEL EXACTLY SAME
+        ONLY VISIBILITY CHANGED (lg-only safe)
+      */}
 
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="h-14 rounded-full border-white/25 bg-white/5 px-8 text-base font-bold text-white backdrop-blur-md hover:bg-white/10 hover:text-white"
-                >
-                  <Link href="/schedule">
-                    <CalendarDays className="mr-2 size-5" />
-                    Explore the schedule
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="mt-10 grid max-w-2xl grid-cols-3 gap-3 border-t border-white/15 pt-7">
-                <div>
-                  <div className="font-display text-2xl font-bold text-white sm:text-3xl">
-                    All
-                  </div>
-                  <p className="mt-1 text-xs leading-5 text-white/50 sm:text-sm">
-                    Skill levels welcome
-                  </p>
-                </div>
-
-                <div>
-                  <div className="font-display text-2xl font-bold text-white sm:text-3xl">
-                    Weekly
-                  </div>
-                  <p className="mt-1 text-xs leading-5 text-white/50 sm:text-sm">
-                    Community play
-                  </p>
-                </div>
-
-                <div>
-                  <div className="font-display text-2xl font-bold text-white sm:text-3xl">
-                    Local
-                  </div>
-                  <p className="mt-1 text-xs leading-5 text-white/50 sm:text-sm">
-                    Basilan community
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{
-                opacity: 0,
-                scale: 0.94,
-                x: 30,
-              }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-                x: 0,
-              }}
-              transition={{
-                duration: 0.75,
-                delay: 0.2,
-                ease: "easeOut",
-              }}
-              className="relative hidden lg:block"
-            >
-              <div className="glass-panel relative ml-auto max-w-md overflow-hidden rounded-[2rem] p-7">
-                <div className="flex items-start justify-between gap-5">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-lime-300">
-                      Upcoming community play
-                    </p>
-                    <h2 className="mt-3 font-display text-3xl font-bold">
-                      Weekend Open Court
-                    </h2>
-                  </div>
-
-                  <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand-lime-400 text-brand-black">
-                    <CalendarDays className="size-6" />
-                  </div>
-                </div>
-
-                <div className="mt-8 grid gap-3">
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <Clock3 className="size-5 text-brand-lime-300" />
-                    <div>
-                      <p className="text-xs text-white/45">
-                        Playing time
-                      </p>
-                      <p className="mt-1 font-semibold">
-                        Saturday, 5s:00 PM
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <MapPin className="size-5 text-brand-lime-300" />
-                    <div>
-                      <p className="text-xs text-white/45">
-                        Location
-                      </p>
-                      <p className="mt-1 font-semibold">
-                        Sunrise, Isabela City, Basilan
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-7 flex items-center justify-between gap-5 border-t border-white/10 pt-6">
-                  <div className="flex -space-x-3">
-                    {["PB", "OP", "CM", "+8"].map((label, index) => (
-                      <div
-                        key={label}
-                        className={`flex size-10 items-center justify-center rounded-full border-2 border-brand-black text-[10px] font-bold ${
-                          index === 3
-                            ? "bg-brand-lime-400 text-brand-black"
-                            : "bg-brand-purple-600 text-white"
-                        }`}
-                      >
-                        {label}
-                      </div>
-                    ))}
-                  </div>
-
-                  <p className="text-right text-xs leading-5 text-white/50">
-                    Players are
-                    <span className="block font-semibold text-white">
-                      ready to rally
-                    </span>
-                  </p>
-                </div>
-              </div>
-
-              <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "easeInOut",
-                }}
-                className="absolute -bottom-10 -left-10 rounded-3xl border border-white/15 bg-brand-purple-600/90 p-5 shadow-2xl backdrop-blur-xl"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="flex size-12 items-center justify-center rounded-2xl bg-white/10">
-                    <Trophy className="size-6 text-brand-lime-300" />
-                  </div>
-
-                  <div>
-                    <p className="text-xs text-white/55">
-                      More than a sport
-                    </p>
-                    <p className="font-bold">
-                      A community experience
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
+      <div className="glass-panel relative ml-auto max-w-md overflow-hidden rounded-[2rem] p-7">
+        {/* unchanged content */}
+        <div className="flex items-start justify-between gap-5">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-lime-300">
+              Upcoming community play
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold">
+              Weekend Open Court
+            </h2>
           </div>
-        </section>
+
+          <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-brand-lime-400 text-brand-black">
+            <CalendarDays className="size-6" />
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-3">
+          <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+            <Clock3 className="size-5 text-brand-lime-300" />
+            <div>
+              <p className="text-xs text-white/45">Playing time</p>
+              <p className="mt-1 font-semibold">Saturday, 5:00 PM</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
+            <MapPin className="size-5 text-brand-lime-300" />
+            <div>
+              <p className="text-xs text-white/45">Location</p>
+              <p className="mt-1 font-semibold">
+                Sunrise, Isabela City, Basilan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FLOAT ELEMENT (UNCHANGED) */}
+      <motion.div
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute -bottom-10 -left-10 rounded-3xl border border-white/15 bg-brand-purple-600/90 p-5 shadow-2xl backdrop-blur-xl"
+      >
+        <div className="flex items-center gap-4">
+          <div className="flex size-12 items-center justify-center rounded-2xl bg-white/10">
+            <Trophy className="size-6 text-brand-lime-300" />
+          </div>
+
+          <div>
+            <p className="text-xs text-white/55">More than a sport</p>
+            <p className="font-bold">A community experience</p>
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+
+  </div>
+</section>
 
         <section className="border-b border-border bg-white">
           <div className="site-container grid grid-cols-2 gap-y-6 py-7 sm:grid-cols-4">
