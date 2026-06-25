@@ -790,7 +790,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Built around the game"
                 title="More than a court. A place to belong."
-                description="Pickleball Basilan is designed to make the sport approachable, organized, and meaningful for every kind of player—from first-time beginners to competitive regulars."
+                description="PickleLob Basilan is designed to make the sport approachable, organized, and meaningful for every kind of player—from first-time beginners to competitive regulars."
                 centered
               />
             </Reveal>
