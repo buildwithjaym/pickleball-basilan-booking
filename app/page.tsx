@@ -1339,7 +1339,7 @@ export default function HomePage() {
                   Monday to Friday
                 </p>
                 <p className="mt-1">
-                  6:00 AM – 10:00 PM
+                  5:00 PM – 9:00 PM
                 </p>
               </div>
 
@@ -1348,13 +1348,37 @@ export default function HomePage() {
                   Saturday and Sunday
                 </p>
                 <p className="mt-1">
-                  6:00 AM – 10:00 PM
+                  5:00 PM– 9:00 PM
                 </p>
               </div>
             </div>
           </div>
         </div>
+              {/* DEVELOPER CREDIT SECTION */}
+<div className="site-container border-t border-white/10 pt-10 pb-6">
+  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-sm text-white/50">
 
+    <p>
+      Developed by{" "}
+      <span className="text-white font-semibold">
+        Jaymar Maruji
+      </span>
+    </p>
+
+    <Link
+      href="https://jaymmaruji.online"
+      target="_blank"
+      className="
+        inline-flex items-center gap-2
+        text-brand-lime-300 font-semibold
+        hover:text-brand-lime-200 transition
+      "
+    >
+      View Portfolio →
+    </Link>
+
+  </div>
+</div>
         <div className="border-t border-white/10">
           <div className="site-container flex flex-col gap-4 py-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
             <p>
@@ -1366,6 +1390,7 @@ export default function HomePage() {
               Landing page and reservation system prototype
             </p>
           </div>
+          
         </div>
       </footer>
     </div>
