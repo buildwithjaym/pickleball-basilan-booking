@@ -390,13 +390,13 @@ export default function HomePage() {
         <div className="site-container flex h-20 items-center justify-between gap-6">
           <Link
             href="#home"
-            aria-label="Pickleball Basilan home"
+            aria-label="Paddle Ground Zamboanga home"
             className="flex items-center gap-3"
           >
             <div className="flex h-12 w-40 items-center justify-center overflow-hidden rounded-xl bg-white px-3 shadow-lg sm:w-48">
               <Image
-                src="/pickleball-basilan-logo-cropped.webp"
-                alt="Pickleball Basilan"
+                src="/paddle.jpg"
+                alt="Paddle Ground Zamboanga"
                 width={80}
                 height={80}
                 priority
@@ -465,8 +465,8 @@ export default function HomePage() {
 
                 <div className="flex h-14 w-48 items-center justify-center overflow-hidden rounded-xl bg-white px-3">
                   <Image
-                    src="/pickleball-basilan-logo-cropped.webp"
-                    alt="Pickleball Basilan"
+                    src="/paddle.jpg"
+                    alt="Paddle Ground Zamboanga"
                     width={220}
                     height={80}
                     className="h-auto w-full object-contain"
@@ -587,7 +587,7 @@ export default function HomePage() {
         font-bold uppercase tracking-[0.2em]
         text-brand-lime-300
       ">
-        Basilan&apos;s growing pickleball community
+        Zamboanga&apos;s growing pickleball community
       </Badge>
 
       {/* TITLE (FIX MOBILE OVERFLOW ONLY) */}
@@ -595,7 +595,7 @@ export default function HomePage() {
         font-display font-bold tracking-tight leading-[0.98]
         text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.75rem]
       ">
-        Where Basilan
+        Where Zamboanga
         <span className="mt-1 sm:mt-2 block text-brand-lime-400">
           comes to play.
         </span>
@@ -733,7 +733,7 @@ export default function HomePage() {
             <div>
               <p className="text-xs text-white/45">Location</p>
               <p className="mt-1 font-semibold">
-                Sunrise, Isabela City, Basilan
+                Zamboanga City
               </p>
             </div>
           </div>
@@ -790,7 +790,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Built around the game"
                 title="More than a court. A place to belong."
-                description="PickleLob Basilan is designed to make the sport approachable, organized, and meaningful for every kind of player—from first-time beginners to competitive regulars."
+                description="Paddle Ground Zamboanga is designed to make the sport approachable, organized, and meaningful for every kind of player—from first-time beginners to competitive regulars."
                 centered
               />
             </Reveal>
@@ -1065,7 +1065,7 @@ export default function HomePage() {
                           {slot.label}
                         </p>
                         <p className="mt-1 text-sm text-muted-foreground">
-                          Pickleball Basilan Court
+                          Paddle Ground Zamboanga Court
                         </p>
                       </div>
 
@@ -1206,7 +1206,7 @@ export default function HomePage() {
                   <h2 className="mt-7 font-display text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-7xl">
                     Ready to join the
                     <span className="block text-brand-lime-400">
-                      Pickleball Basilan community?
+                      Paddle Ground Zamboanga community?
                     </span>
                   </h2>
 
@@ -1254,8 +1254,8 @@ export default function HomePage() {
           <div>
             <div className="flex h-16 w-56 items-center justify-center overflow-hidden rounded-xl bg-white px-4">
               <Image
-                src="/pickleball-basilan-logo-cropped.webp"
-                alt="Pickleball Basilan"
+                src="/paddle.jpg"
+                alt="Paddle Ground Zamboanga"
                 width={260}
                 height={100}
                 className="h-auto w-full object-contain"
@@ -1264,14 +1264,14 @@ export default function HomePage() {
 
             <p className="mt-6 max-w-md text-sm leading-7 text-white/50">
               Building a more active, connected, and welcoming
-              pickleball community in Basilan through organized play,
+              pickleball community in Zamboanga through organized play,
               learning, and friendly competition.
             </p>
 
             <div className="mt-7 flex gap-3">
               <Link
                 href="#"
-                aria-label="Pickleball Basilan Facebook"
+                aria-label="Pickleball Facebook"
                 className="flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/65 transition hover:border-brand-lime-400/40 hover:bg-brand-lime-400 hover:text-brand-black"
               >
                 <FaFacebookF className="size-5" />
@@ -1279,7 +1279,7 @@ export default function HomePage() {
 
               <Link
                 href="#"
-                aria-label="Pickleball Basilan Instagram"
+                aria-label="Pickleball Instagram"
                 className="flex size-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/65 transition hover:border-brand-lime-400/40 hover:bg-brand-lime-400 hover:text-brand-black"
               >
                 <FaInstagram className="size-5" />
@@ -1313,7 +1313,7 @@ export default function HomePage() {
             <div className="mt-5 grid gap-4 text-sm text-white/50">
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-brand-lime-300" />
-                <span>Basilan, Philippines</span>
+                <span>Zamboanga City, Philippines</span>
               </div>
 
               <div className="flex items-start gap-3">
@@ -1382,7 +1382,7 @@ export default function HomePage() {
         <div className="border-t border-white/10">
           <div className="site-container flex flex-col gap-4 py-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} Pickleball Basilan. All
+              © {new Date().getFullYear()} Paddle Ground Zamboanga. All
               rights reserved.
             </p>
 

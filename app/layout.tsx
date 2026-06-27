@@ -17,11 +17,11 @@ const oswald = Oswald({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pickleball Basilan",
-    template: "%s | Pickleball Basilan",
+    default: "Paddle Ground Zamboanga",
+    template: "%s | Paddle Ground Zamboanga",
   },
   description:
-    "Play, learn, compete, and connect with the growing Pickleball Basilan community.",
+    "Play, learn, compete, and connect with the growing Paddle Ground Zamboanga community.",
   keywords: [
     "Pickleball Basilan",
     "pickleball court",
@@ -31,37 +31,37 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Pickleball Basilan",
+      name: "Paddle Ground Zamboanga",
     },
   ],
-  creator: "Pickleball Basilan",
-  publisher: "Pickleball Basilan",
+  creator: "Paddle Ground Zamboanga",
+  publisher: "Paddle Ground Zamboanga",
   openGraph: {
-    title: "Pickleball Basilan",
+    title: "Paddle Ground Zamboanga",
     description:
-      "Experience a better way to play, compete, and connect in Basilan.",
+      "Experience a better way to play, compete, and connect.",
     type: "website",
     locale: "en_PH",
-    siteName: "Pickleball Basilan",
+    siteName: "Paddle Ground Zamboangan",
     images: [
       {
-        url: "/pickleball-basilan-logo-cropped.webp",
+        url: "/paddle.jpg",
         width: 1200,
         height: 630,
-        alt: "Pickleball Basilan",
+        alt: "Paddle Ground Zamboanga",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pickleball Basilan",
+    title: "Paddle Ground Zamboanga",
     description:
       "Experience a better way to play, compete, and connect in Basilan.",
-    images: ["/pickleball-basilan-logo-cropped.webp"],
+    images: ["/paddle.jpg"],
   },
   icons: {
-    icon: "/pickleball-basilan-logo-cropped.webp",
-    apple: "/pickleball-basilan-logo-cropped.webp",
+    icon: "/paddle.jpg",
+    apple: "/paddle.jpg",
   },
 };
 

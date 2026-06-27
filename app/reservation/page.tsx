@@ -299,13 +299,13 @@ export default function ReservationPage() {
         <div className="site-container flex h-20 items-center justify-between gap-5">
           <Link
             href="/"
-            aria-label="Return to Pickleball Basilan home"
+            aria-label="Return to Paddle Ground Zamboangan home"
             className="flex items-center"
           >
             <div className="flex h-12 w-44 items-center justify-center overflow-hidden rounded-xl bg-white px-3 shadow-sm ring-1 ring-black/5 sm:w-52">
               <Image
                 src="/pickleball-basilan-logo-cropped.webp"
-                alt="Pickleball Basilan"
+                alt="Paddle Ground Zamboanga"
                 width={240}
                 height={90}
                 priority
@@ -602,7 +602,7 @@ export default function ReservationPage() {
 
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
                   Start the reservation demo and experience how future
-                  online booking may work for Pickleball Basilan.
+                  online booking may work for Paddle Ground Zamboanga.
                 </p>
               </div>
 
@@ -622,7 +622,7 @@ export default function ReservationPage() {
       <footer className="border-t border-border bg-white">
         <div className="site-container flex flex-col gap-4 py-7 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} Pickleball Basilan
+            © {new Date().getFullYear()} Paddle Ground Zamboanga
           </p>
 
           <div className="flex items-center gap-5">
@@ -696,7 +696,7 @@ export default function ReservationPage() {
                     </DialogTitle>
 
                     <DialogDescription className="mx-auto mt-4 max-w-xl text-center text-base leading-7">
-                      Thank you for trying the Pickleball Basilan
+                      Thank you for trying the Paddle Ground Zamboanga
                       reservation demo. This prototype demonstrates how
                       future online reservations may work.
                     </DialogDescription>
@@ -836,7 +836,7 @@ export default function ReservationPage() {
 
                         <DialogDescription className="mt-2 max-w-xl text-sm leading-6 text-white/55">
                           Complete the three steps below to create a
-                          sample Pickleball Basilan reservation.
+                          sample Paddle Ground Zamboanga reservation.
                         </DialogDescription>
                       </div>
 
