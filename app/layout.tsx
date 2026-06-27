@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   description:
     "Play, learn, compete, and connect with the growing Paddle Ground Zamboanga community.",
   keywords: [
-    "Pickleball Basilan",
+    "Pickleball Zamboanga",
     "pickleball court",
     "pickleball reservation",
     "pickleball schedule",
-    "sports in Basilan",
+    "sports in ZC",
   ],
   authors: [
     {
