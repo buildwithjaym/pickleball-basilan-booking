@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Paddle Ground Zamboanga",
     description:
-      "Experience a better way to play, compete, and connect in Basilan.",
+      "Experience a better way to play, compete, and connect.",
     images: ["/paddle.jpg"],
   },
   icons: {
